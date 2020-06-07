@@ -1,0 +1,98 @@
+/*Global CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', Arial;
+}
+
+body {
+	display: block;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #12681E;
+	display: block;
+	position: relative;
+}
+
+.card {
+	margin-bottom: 30px;
+}
+
+.bg-greendark {
+		width: 100%;
+		background: linear-gradient(to bottom, rgba(18,104,30,1) 0%, rgba(41,190,76,1) 72%);
+		display: flex;
+		flex-direction: column;
+		height: 60vh;
+		max-height: 560px;
+		position: absolute;
+		overflow: hidden;
+		transform: skewY(6deg);
+		transform-origin: 100%;
+		opacity: 90%;
+}
+
+footer {
+	background-color: #FFD652;
+}
+
+.foot {
+	background-color: #1E0635;
+	bottom: 0;
+}
+
+figure:hover {
+	border-radius: 50%;
+}
+
+#backTop {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: inline-block;
+	padding: 1em;
+	margin: 1em;
+	background: #12681E;
+	border: 1px solid #FFD652;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 999;
+}
+
+/*Mobile Responsive*/
+@media screen and (min-width: 320px) and (max-width: 786px) {
+	.custom_section {
+		flex-direction: column-reverse;
+	}
+	.second > .card {
+		padding-top: 50px;
+	} 
+
+}
+/*End Mobile*/
+
+/*DEKSTOP*/
+@media screen and (min-width: 999.98px) {
+	.nav {
+    position: relative;
+    background-color: #fff;
+	}
+	.navbar-nav > li:hover {
+		font-weight: bold;
+		color: #12681E;
+	}
+
+	.hero {
+		background-color: #fff;
+	}
+
+	.second > .card {
+		background-color: #e9ede4;
+	}
+}
+/*End Dekstop*/
+
+
+
